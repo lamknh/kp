@@ -1,0 +1,27 @@
+a:visited{ color:white;}
+    
+body{text-align:center; background-color: rgba(9, 42, 71, 0.876); color:rgb(252, 253, 206);}
+h2{
+    color:red;
+    background-color: aliceblue;
+    font-size: 2rem;
+    font-family: Georgia, "Helvetica Neue", serif;
+    margin: 40px 0px;
+}
+h1{
+    font-size:5rem;
+    color: white;
+}
+h1, #info {
+    border:2px solid white;
+    font-family: Righteous, "Helvetica Neue", serif;
+}
+#select{ color:rgb(91, 178, 218);  }
+ul, ol {
+    display : table;
+    margin-left:auto;
+    margin-right:auto;
+}
+ol li {
+    line-height: 2;
+}
