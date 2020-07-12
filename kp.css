@@ -50,7 +50,15 @@ h2{
 #album { color:rgb(91, 178, 218);}
 
 /* contact */
-#contact .container {color: white; text-align: center;}
+#contact .container {color: white; text-align: center}
+#contact form {margin-top: 50px;}
+#contact .container .form-control {width: 600px; background: transparent;
+    border: none; outline: none; border-bottom: 1.5px solid white; font-size: 1.3rem; color: #fff;
+    margin-bottom: 16px;}
+#contact input {height: 45px;}
+#contact form .form-control-submit {background: orangered; border-color: transparent; color: #fff;
+    font-size: 20px; font-weight: bold; letter-spacing: 2px; height: 50px; width: 400px; margin-top: 20px; margin-bottom: 20px;}
+#contact form .form-control-submit:hover {cursor: pointer; background-color: red;}
 
 /* footer */
 #footer .container .footer {padding: 10px 0 0 0; text-align: center; color: #fff;}

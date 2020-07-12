@@ -97,17 +97,13 @@
 
 			<div id="contact">
 				<div class="container">
-					<form action="">
+					<form id="form-control" action="">
 						<h2>Contact</h2>
-						<p> Name <br>
-						<input type="text" name="id" value="not necessary"></p><br>
-						<p> Email <br>
-						<input type="text" name="email"></p><br>
-						<p> Password <br>
-						<input type="password" name="pwd"></p>
-						<br>
-						<p> Message <br><br> <textarea cols="70" rows="10">not neccessary</textarea></p>
-						<input type = "submit">
+						<input name="name" type="text" class="form-control" placeholder="Name" required><br>
+						<input name="email" type="email" class="form-control" placeholder="Email" required><br>
+						<br><br>
+						<textarea type="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+						<input type="submit" class="form-control-submit" value="SEND MESSAGE">
 					</form>
 					<br>
 				</div>
