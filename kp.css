@@ -1,27 +1,61 @@
 a:visited{ color:white;}
-    
-body{text-align:center; background-color: rgba(9, 42, 71, 0.876); color:rgb(252, 253, 206);}
+
+/* layout */
+#wrap {margin: 0 auto;}
+#header {height: 60px; background: rgb(32, 32, 32);}
+#banner {background-image: url("sources/img/turntable.jpg");}
+#contents {background-color:  rgb(35, 40, 52);}
+#footer {background:rgb(32, 32, 32);}
+
+/*container*/
+.container {width: 990px; margin: 0 auto;}
+
+/* header */
+.header-space {height: 20px;}
+.header .header-menu {display: flex; justify-content: space-between;}
+.header .header-menu .fa {color: white;}
+.header-menu input[type=text] {width: 200px; text-align: left;}
+.header-menu .fa, input[type=text] {margin-top: 20px;}
+#header .container .header-menu a {color: #fff; padding: 20px 0px 10px 13px; display: inline-block;}
+#header .container .header-menu a:hover {color: red;}
+
+/*banner*/
+#banner .container .header-tit {text-align: center; }
+#banner .container .header-tit h1 {font-size:5rem; color: white; border:2px solid white;
+    padding : 10px; margin-top: 40px; font-family: Righteous, "Helvetica Neue", serif;
+    background-color: rgba(162, 162, 162, 0.452);}
+#banner .container .header-tit #bio_info {display: inline-block; font-size: 1.5rem; color:rgb(252, 253, 206);
+    margin-bottom: 20px; margin-top: -25px; border-radius: 20px; width: 300px; height: 60px;
+    line-height: 20px; background-color: rgb(32, 32, 32);}
+#banner .banner-icon {text-align: center; margin-top: 10px; display: center;}
+#banner .banner-icon .icon {font-size: 30px; display: inline; padding: 10px;}
+#banner .banner-icon .icon a {display: inline-block; width: 32 px; height: 32px; margin-top: 10px;}
+#banner .banner-icon .icon .fa:hover {color: red;}
+
+.banner-space {height: 55px; background-color: rgb(32, 32, 32);}
+
+/* menu */
+.nav {overflow : hidden; color: rgb(252, 253, 206); }
+.nav > div {float : left; width: 40%; padding :30px 0; text-align: center;}
+.nav > div.space {float: left; width: 20%}
 h2{
     color:red;
+    text-align:center; 
     background-color: aliceblue;
     font-size: 2rem;
     font-family: Georgia, "Helvetica Neue", serif;
-    margin: 40px 0px;
+    margin: 40px 0px; letter-spacing: 0.5px;
 }
-h1{
-    font-size:5rem;
-    color: white;
-}
-h1, #info {
-    border:2px solid white;
-    font-family: Righteous, "Helvetica Neue", serif;
-}
-#select{ color:rgb(91, 178, 218);  }
-ul, ol {
-    display : table;
-    margin-left:auto;
-    margin-right:auto;
-}
-ol li {
-    line-height: 2;
-}
+
+#album { color:rgb(91, 178, 218);}
+
+/* contact */
+#contact .container {color: white; text-align: center;}
+
+/* footer */
+#footer .container .footer {padding: 10px 0 0 0; text-align: center; color: #fff;}
+#footer .container .footer address {margin-top: 13px; margin-bottom: 20px; color: rgba(255, 255, 255, 0.829);}
+#footer .container .footer li {position: relative; display: inline; text-transform: uppercase; padding: 0 10px 0 10px;}
+#footer .container .footer li:before {content: ""; width: 2px; height: 15px; background: #ccc; position: absolute;
+    left: 0; top: 2px;}
+#footer .container .footer li:first-child:before {width: 0; height: 0;}

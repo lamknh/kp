@@ -1,40 +1,133 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<!-- css style -->
+	<link rel="stylesheet" type="text/css" href="reset.css" />
 	<link rel="stylesheet" type="text/css" href="kp.css" />
+
+	<!-- web icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- web font -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<title>Kyle Patrick</title>
 </head>
 
 <body>
-	<img src="img.jpg" width ="300" height = "330" alt="Kyle's pic" title = "Kyle's pic">
-<h1>Kyle Patrick</h1>
-	<p id="info">Singer, Songwriter, Producer</p>
-<h2>SNS</h2>
-<strong>@realkylepatrick</strong>
-<ul>
-	<li><a href = "https://www.instagram.com/realkylepatrick/" target="_blank" title="redirecting">Instargram</a></li>
-	<li><a href = "https://twitter.com/RealKylePatrick" target="_blank">Twitter</al></li>
-	<li><a href = "https://www.facebook.com/KylePatrickOfficial/" target="_blank">Facebook</a></li>
-</ul>
-<h2 id = "select">Album</h2>
-<ol>
-	<li>Modern Minds and Pastimes</li>
-	<li>kp</li>
-	<li>TCV</li>
-	<li>Kyle Patrick</li>
-</ol>
+	<div id="wrap">
+		<div id="header">
+			<div class="container">
+				<div class="header">
+					<div class="header-menu">
+						<div class="search">
+							<input type="text" placeholder="Search">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</div>
+						<li>
+							<a href="http://open.spotify.com/artist/kylepatrick">Spotify</a>
+							<a href="https://soundcloud.com/kylepatrick">SoundCloud</a>
+							<a href="https://kylepatrick.bandcamp.com/">BandCamp</a>
+							<a href="https://www.youtube.com/user/kylepatrickmusic">Youtube</a>
+						</li>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<form action="">
-	<h2>Contact</h2>
-	<p> Name <br>
-	<input type="text" name="id" value="not necessary"></p>
-	<p> Email <br>
-	<input type="text" name="email"></p>
-	<p> Password <br>
-	<input type="password" name="pwd"></p>
-	<p> Message <br><br> <textarea cols="70" rows="10">not neccessary</textarea></p>
-	<input type = "submit">
-</form>
-<br>
+		<div id="banner">
+			<div class="container">
+				<div class="header-space"></div>
+				<!-- header menu -->
+				<div class="header-tit">
+					<h1>Kyle Patrick</h1>
+					<div id="bio_info">
+						<p id="info"><br>Singer, Songwriter, Producer</p>
+					</div>
+				</div>
+				<!-- header title -->
+			</div>
+			<div class="banner-space">
+				<div class="banner-icon">
+					<div class="icon">
+						<a href="https://twitter.com/RealKylePatrick" class="tw">
+						<i class="fa fa-twitter" aria-hidden="true"></i></a>
+					</div>	
+					<div class="icon">
+						<a href="https://www.instagram.com/realkylepatrick/" class="ig">
+						<i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>						
+					<div class="icon">
+						<a href="https://www.facebook.com/KylePatrickOfficial/" class="fb">
+						<i class="fa fa-facebook" aria-hidden="true"></i></a>
+					</div>
+					
+				</div>
+				<!-- header icon -->
+			</div>
+		</div>
+
+		<div id="contents">
+			<div>
+				<div id="cont_nav">
+					<div class="container">
+						<div class="nav">
+							<div>
+								<h2>SNS</h2>
+								<strong>@realkylepatrick</strong>
+							<ul>
+								<li><a href = "https://www.instagram.com/realkylepatrick/" target="_blank" title="redirecting">Instargram</a></li>
+								<li><a href = "https://twitter.com/RealKylePatrick" target="_blank">Twitter</a></li>
+								<li><a href = "https://www.facebook.com/KylePatrickOfficial/" target="_blank">Facebook</a></li>
+							</ul>
+							</div>
+							<div class="space"></div>
+							<div>
+								<h2 id="album">Album</h2>
+								<ol>
+									<li>Modern Minds and Pastimes</li>
+									<li>kp</li>
+									<li>TCV</li>
+									<li>Kyle Patrick</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="contact">
+				<div class="container">
+					<form action="">
+						<h2>Contact</h2>
+						<p> Name <br>
+						<input type="text" name="id" value="not necessary"></p><br>
+						<p> Email <br>
+						<input type="text" name="email"></p><br>
+						<p> Password <br>
+						<input type="password" name="pwd"></p>
+						<br>
+						<p> Message <br><br> <textarea cols="70" rows="10">not neccessary</textarea></p>
+						<input type = "submit">
+					</form>
+					<br>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div class="container">
+				<div class="footer">
+					<address>
+						Copyright&copy;Kim Nahyeong All Right Reserved
+					</address>
+					<ul>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Terms</a></li>
+					</ul>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
