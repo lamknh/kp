@@ -2,9 +2,15 @@ a:visited{ color:white;}
 
 /* layout */
 #wrap {margin: 0 auto;}
-#header {height: 60px; background: rgb(32, 32, 32);}
-#banner {background-image: url("sources/img/turntable.jpg");}
-#contents {background-color:  rgba(28, 34, 47, 0.89);}
+#header {height: 70px; background: rgb(32, 32, 32);}
+#banner {
+    background-image: url("sources/img/turntable.jpg");
+    background-size: cover;
+}
+#contents {
+    background: linear-gradient(to bottom,
+     rgb(32, 32, 32), rgba(28, 34, 47, 0.89), rgb(32, 32, 32));
+}
 #footer {background:rgb(32, 32, 32);}
 
 /*container*/
@@ -12,51 +18,127 @@ a:visited{ color:white;}
 
 /* header */
 .header-space {height: 20px;}
-.header .header-menu {display: flex; justify-content: space-between;}
-.header .header-menu .fa {color: white;}
-.header-menu input[type=text] {width: 200px; text-align: left;}
-.header-menu .fa, input[type=text] {margin-top: 20px;}
-#header .container .header-menu a {color: #fff; padding: 20px 0px 10px 13px; display: inline-block;}
+.header-menu {
+    display: flex; 
+    justify-content: space-between;
+}
+#header .container .header-menu .url{
+    color: #fff;
+    padding: 20px 0px 10px 13px; 
+    display: inline-block;
+    margin-top: 4px;
+    transition: 0.4s;
+}
 #header .container .header-menu a:hover {color: red;}
-.search .fa {cursor: pointer;}
+
+/* header-search */
+.search-box{
+    background: orangered;
+    height: 35px;
+    border-radius: 40px;
+    transform: translate(5%, 50%);
+    margin-bottom: -10px;
+}
+.search-box:hover > .search-txt{
+    width: 200px;
+    padding: 0 6px;
+    color: white;
+}
+.search-box:hover > .search-btn{
+    background: white;
+    color: orangered;
+}
+.search-btn{
+    float: right;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 35px;
+    width: 0;
+}
+.search-txt::placeholder{
+    padding: 10px;
+}
 
 /*banner*/
-#banner .container .header-tit {text-align: center; }
-#banner .container .header-tit h1 {font-size:5rem; color: white; border:2px solid white;
-    padding : 10px; margin-top: 40px; 
+#banner .container .header-tit {text-align: center;}
+#banner .container .header-tit h1 {
+    font-size:5rem; 
+    color: white;
+    border:2px solid white;
+    padding : 10px; 
+    margin-top: 40px; 
     font-family: Righteous, "Helvetica Neue", serif;
     background-color: rgba(162, 162, 162, 0.452);
     text-shadow: 3px 2px #111;
 }
-#banner .container .header-tit #bio_info {display: inline-block; font-size: 1.5rem; color:rgb(252, 253, 206);
-    margin-bottom: 20px; margin-top: -25px; 
-    border-radius: 20px; width: 300px; height: 60px;
-    line-height: 20px; background-color: rgb(32, 32, 32);
+#banner .container .header-tit #bio_info {
+    display: inline-block; 
+    font-size: 1.5rem; 
+    color:rgb(252, 253, 206);
+    margin-bottom: 20px; 
+    margin-top: -25px; 
+    border-radius: 20px; 
+    width: 300px; height: 60px;
+    line-height: 20px; 
+    background-color: rgb(32, 32, 32);
     box-shadow: 0 3px 2px -1px #111;
     text-shadow: 3px 3px #111;
 }
 
-.banner-space {height: 76px; background-color: rgb(32, 32, 32);}
-#banner .banner-icon {text-align: center; margin-top: 10px; 
-    display: center;}
-#banner .banner-icon .icon {font-size: 30px; display: 
-    inline; padding: 10px;}
-#banner .banner-icon .icon a {
-    display: inline-block;
-    width: 32 px; height: 32px; margin-top: 10px;}
-#banner .banner-icon .icon .fa:hover {color: red;}
-#banner .banner-space .banner-icon h3 {
-    font-size: 1rem; display: inline-block; 
-    margin-top: 7px; padding-right: 6%;
-    color: rgb(252, 253, 206); width: 10px;
-    text-shadow: 3px 3px #111;
+.banner-space {height: 76px; 
+    background-color: rgb(32, 32, 32);
 }
 
-
+/* SNS */
+#banner .banner-icon {text-align: center; 
+    margin-top: 10px; 
+    display: center;
+}
+#banner .banner-icon .icon {
+    font-size: 30px; 
+    display: inline; 
+    padding: 10px;
+}
+#banner .banner-icon .icon a {
+    display: inline-block;
+    width: 32 px; height: 32px; 
+    margin-top: 10px;
+}
+#banner .banner-icon .icon .fa:hover {
+    color: red;
+    transition: 0.4s;
+}
+#banner .banner-space .banner-icon h3 {
+    font-size: 1rem; 
+    display: inline-block; 
+    margin-top: 20px; 
+    padding-right: 6%;
+    color: rgb(252, 253, 206); 
+    width: 10px;
+}
 
 /* menu */
 .nav {overflow : hidden; color: rgb(252, 253, 206); }
-.nav > div {float : left; width: 40%; padding :30px 0; text-align: center;}
+.nav > div {
+    float : left; 
+    width: 40%; 
+    padding :30px 0; 
+    text-align: center;
+}
 .nav > div.space {float: left; width: 20%}
 h2{
     color:red;
@@ -67,24 +149,118 @@ h2{
     margin: 40px 0px; letter-spacing: 0.5px;
 }
 
+/* slidershow */
+img{
+    height: 100%; width: 100%;
+}
+.slidershow {
+    width: 400px; height: 400px;
+    overflow: hidden;
+}
+.navigation{
+    position: absolute;
+    bottom: -280px;
+    left: 65%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 40px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background: #fff;
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+
 /* contact */
-#contact .container {color: white; text-align: center}
+#contact .container {
+    color: white; 
+    text-align: center
+}
 #contact form {margin-top: 50px;}
-#contact .container .form-control {width: 600px; background: transparent;
-    border: none; outline: none; border-bottom: 1.5px solid white; font-size: 1.3rem; color: #fff;
-    margin-bottom: 16px;}
+#contact .container .form-control {
+    width: 600px; 
+    background: transparent;
+    border: none; 
+    outline: none; 
+    border-bottom: 1.5px solid white; 
+    font-size: 1.3rem; color: #fff;
+    margin-bottom: 16px;
+}
 #contact input {height: 45px;}
-#contact form .form-control-submit {background: orangered; 
-    border-color: transparent; color: #fff;
-    font-size: 20px; font-weight: bold; letter-spacing: 2px; 
-    height: 50px; width: 400px; margin-top: 20px; 
-    margin-bottom: 20px; box-shadow: 0 3px 2px -1px #111;}
-#contact form .form-control-submit:hover {cursor: pointer; background-color: red;}
+#contact form .form-control-submit {
+    background: orangered; 
+    border-color: transparent; 
+    color: #fff;
+    font-size: 20px; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    height: 50px; width: 400px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 3px 2px -1px #111;
+    border-radius: 10px;
+}
+#contact form .form-control-submit:hover {
+    cursor: pointer; 
+    background-color: red;
+}
 
 /* footer */
-#footer .container .footer {padding: 10px 0 0 0; text-align: center; color: #fff;}
-#footer .container .footer address {margin-top: 13px; margin-bottom: 20px; color: rgba(255, 255, 255, 0.829);}
-#footer .container .footer li {position: relative; display: inline; text-transform: uppercase; padding: 0 10px 0 10px;}
-#footer .container .footer li:before {content: ""; width: 2px; height: 15px; background: #ccc; position: absolute;
-    left: 0; top: 2px;}
-#footer .container .footer li:first-child:before {width: 0; height: 0;}
+#footer .container .footer {
+    padding: 10px 0 0 0; 
+    text-align: center; 
+    color: #fff;
+}
+#footer .container .footer address {
+    margin-top: 13px; 
+    margin-bottom: 20px; 
+    color: rgba(255, 255, 255, 0.829);
+}
+#footer .container .footer li {
+    position: relative; 
+    display: inline; 
+    text-transform: uppercase; 
+    padding: 0 10px 0 10px;
+}
+#footer .container .footer li:before {
+    content: ""; 
+    width: 2px; height: 15px; 
+    background: #ccc; 
+    position: absolute;
+    left: 0; top: 2px;
+}
+#footer .container .footer li:first-child:before {
+    width: 0; height: 0;
+}
