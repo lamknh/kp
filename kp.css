@@ -178,11 +178,13 @@ a:visited{ color:white;}
 .nav > div.space {float: left; width: 20%}
 h2{
     color:red;
-    text-align:center; 
+    text-align:center;
     background-color: aliceblue;
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-family: Georgia, "Helvetica Neue", serif;
     margin: 40px 0px; letter-spacing: 0.5px;
+    height: 6vh;
+    padding-top: 8px;
 }
 
 /* slidershow */
@@ -195,11 +197,43 @@ img{
 }
 .navigation{
     position: absolute;
-    bottom: -280px;
+    bottom: -290px;
     left: 65%;
     transform: translateX(-50%);
     display: flex;
 }
+.slidershow h3{
+    color: rgb(252, 253, 206);
+    padding: 10px 10px;
+}
+.slidershow .description{
+    color: #fff;
+    position: absolute;
+    border: 2px solid #fff;
+    display: flex;
+    bottom: -240px;
+    left: 48%;
+    width: 33vw;
+    height: 40vh;
+    visibility: hidden;
+    flex-direction: column;
+}
+.slidershow .description .title {
+    height: 30%;
+    margin: auto;
+    margin-top: 10%;
+    font-size: 1.5rem;
+}
+.slidershow .description .details {
+    margin: auto;
+    height: 70%;
+    font-size: 18px;
+    margin-top: 7%;
+}
+.slidershow .description .details li{
+    list-style: circle;
+}
+
 .bar{
     width: 40px;
     height: 10px;
@@ -229,14 +263,26 @@ input[name="r"]{
 #r1:checked ~ .s1{
     margin-left: 0;
 }
+#r1:checked ~ .s1 .description{
+    visibility: visible;
+}
 #r2:checked ~ .s1{
     margin-left: -20%;
+}
+#r2:checked ~ .s2 .description{
+    visibility: visible;
 }
 #r3:checked ~ .s1{
     margin-left: -40%;
 }
+#r3:checked ~ .s3 .description{
+    visibility: visible;
+}
 #r4:checked ~ .s1{
     margin-left: -60%;
+}
+#r4:checked ~ .s4 .description{
+    visibility: visible;
 }
 
 /* events */
@@ -333,6 +379,9 @@ input[name="r"]{
 }
 
 /* footer */
+#footer{
+    border-top: 1px solid #fff;
+}
 #footer .container .footer {
     padding: 10px 0 0 0; 
     text-align: center; 
