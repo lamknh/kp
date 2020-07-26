@@ -4,7 +4,7 @@ a:visited{ color:white;}
 #wrap {margin: 0 auto;}
 #header {height: 70px; background: rgb(32, 32, 32);}
 #banner {
-    background-image: url("sources/img/turntable.jpg");
+    background-image: url("./sources/img/turntable.jpg");
     background-size: cover;
 }
 #contents {
