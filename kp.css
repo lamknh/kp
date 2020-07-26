@@ -8,8 +8,7 @@ a:visited{ color:white;}
     background-size: cover;
 }
 #contents {
-    background: linear-gradient(to bottom,
-     rgb(32, 32, 32), rgba(28, 34, 47, 0.89), rgb(32, 32, 32));
+    background: linear-gradient(to bottom, rgb(32, 32, 32), rgba(28, 34, 47, 0.89), rgb(32, 32, 32));
 }
 #footer {background:rgb(32, 32, 32);}
 
@@ -19,8 +18,10 @@ a:visited{ color:white;}
 /* header */
 .header-space {height: 20px;}
 .header-menu {
-    display: flex; 
+    min-height: 8vh;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 #header .container .header-menu .url{
     color: #fff;
@@ -28,6 +29,7 @@ a:visited{ color:white;}
     display: inline-block;
     margin-top: 4px;
     transition: 0.4s;
+    letter-spacing: 1px;
 }
 #header .container .header-menu a:hover {color: red;}
 
@@ -36,8 +38,7 @@ a:visited{ color:white;}
     background: orangered;
     height: 35px;
     border-radius: 40px;
-    transform: translate(5%, 50%);
-    margin-bottom: -10px;
+    transform: translate(5%, 20%);
 }
 .search-box:hover > .search-txt{
     width: 200px;
@@ -71,6 +72,41 @@ a:visited{ color:white;}
 }
 .search-txt::placeholder{
     padding: 10px;
+}
+/* header interactive */
+.burger {
+    margin-top: 15px;
+    display: none;  
+}
+.burger div{
+    width: 25px;
+    height: 2.5px;
+    background-color: #fff;
+    margin: 5px;
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links {
+        justify-content: space-around;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background: rgb(32, 32, 32);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
 }
 
 /*banner*/
@@ -203,6 +239,64 @@ input[name="r"]{
     margin-left: -60%;
 }
 
+/* events */
+.event{
+    height: 500px;
+}
+.event .description{
+    height: 50px;
+    padding: 50px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.event .description:hover{
+    background: #e91e63;
+}
+.event .description h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: -8px;
+}
+.event .description p{
+    margin: 10px 0 0;
+}
+.event .events{
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 450px;
+    display: flex;
+}
+.event .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px;
+}
+.event .events li{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px;
+}
+.event .events ul li{
+    list-style: none;
+    background: #fff;
+    height: 200px;
+}
+.event .events ul li .time{
+    position: relative;
+    padding: 20px;
+    background: #262626;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.event .events ul li:hover .time{
+    background: #e91e63;
+}
+
 /* contact */
 #contact .container {
     color: white; 
@@ -215,7 +309,8 @@ input[name="r"]{
     border: none; 
     outline: none; 
     border-bottom: 1.5px solid white; 
-    font-size: 1.3rem; color: #fff;
+    font-size: 1.3rem; 
+    color: #fff;
     margin-bottom: 16px;
 }
 #contact input {height: 45px;}

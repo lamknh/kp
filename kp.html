@@ -6,6 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="reset.css" />
 	<link rel="stylesheet" type="text/css" href="kp.css" />
 
+	<!-- javascript -->
+	<script src="kp.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<!-- web icon -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- web font -->
@@ -17,22 +21,31 @@
 	<div id="wrap">
 		<div id="header">
 			<div class="container">
-				<div class="header-menu">
-					<div class="search-box">
-						<input class="search-txt" type="text" placeholder="Type to search">
-						<a class="search-btn" href="#">
-							<i class="fa fa-search" aria-hidden="true"></i>
-						</a>
+				<nav>
+					<div class="header-menu">
+						<div class="search-box">
+							<input class="search-txt" type="text" placeholder="Type to search">
+							<a class="search-btn" href="#">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
+						</div>
+						<!-- search box -->
+						<ul class="nav-links">
+							<li>
+								<a class="url" href="http://open.spotify.com/artist/kylepatrick">Spotify</a>
+								<a class="url" href="https://soundcloud.com/kylepatrick">SoundCloud</a>
+								<a class="url" href="https://kylepatrick.bandcamp.com/">BandCamp</a>
+								<a class="url" href="https://www.youtube.com/user/kylepatrickmusic">Youtube</a>
+							</li>
+						</ul>
+						<!-- header menu -->
+						<div class="burger">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
 					</div>
-					<!-- search box -->
-					<li>
-						<a class="url" href="http://open.spotify.com/artist/kylepatrick">Spotify</a>
-						<a class="url" href="https://soundcloud.com/kylepatrick">SoundCloud</a>
-						<a class="url" href="https://kylepatrick.bandcamp.com/">BandCamp</a>
-						<a class="url" href="https://www.youtube.com/user/kylepatrickmusic">Youtube</a>
-					</li>
-					<!-- header menu -->
-				</div>
+				</nav>
 			</div>
 		</div>
 		
@@ -69,43 +82,68 @@
 		</div>
 
 		<div id="contents">
-			<div id="cont_nav">
-				<div class="container">
-					<br>
-					<h2>Album</h2>
-					<div class="slidershow">
-						<div class="slides">
-							<input type="radio" name="r" id="r1" checked>
-							<input type="radio" name="r" id="r2">
-							<input type="radio" name="r" id="r3">
-							<input type="radio" name="r" id="r4">
-							
-							<div class="slide s1">
-								<img src="sources/img/kp.jpg" alt="">
-							</div>
-							<div class="slide">
-								<img src="sources/img/mmnp.jpg" alt="">
-							</div>
-							<div class="slide">
-								<img src="sources/img/tcv.jpg" alt="">
-							</div>
-							<div class="slide">
-								<img src="sources/img/kylepatrick.jpg" alt="">
-							</div>
+			<div class="container">
+				<br>
+				<h2>Album</h2>
+				<div class="slidershow">
+					<div class="slides">
+						<input type="radio" name="r" id="r1" checked>
+						<input type="radio" name="r" id="r2">
+						<input type="radio" name="r" id="r3">
+						<input type="radio" name="r" id="r4">
+						
+						<div class="slide s1">
+							<img src="sources/img/kp.jpg" alt="">
 						</div>
+						<div class="slide">
+							<img src="sources/img/mmnp.jpg" alt="">
+						</div>
+						<div class="slide">
+							<img src="sources/img/tcv.jpg" alt="">
+						</div>
+						<div class="slide">
+							<img src="sources/img/kylepatrick.jpg" alt="">
+						</div>
+					</div>
 
-						<div class="navigation">
-							<label for="r1" class="bar"></label>
-							<label for="r2" class="bar"></label>
-							<label for="r3" class="bar"></label>
-							<label for="r4" class="bar"></label>
-						</div>
-						<!-- slider -->
+					<div class="navigation">
+						<label for="r1" class="bar"></label>
+						<label for="r2" class="bar"></label>
+						<label for="r3" class="bar"></label>
+						<label for="r4" class="bar"></label>
+					</div>					
+				</div>
+				<!-- Album slider -->
+			</div>
+
+			<div class="event">
+				<br>
+				<div class="container">
+					<div class="description">
+						<h3>Events And Shows</h3>
+						<p>description blah blah blah</p>
+					</div>
+					<br>
+					<div class="events">
+						<ul>
+							<li>
+								<div class="time">
+									<h4>date<br><span>Month</span></h4>
+								</div>
+								<div class="details">
+									<h5>Event Title</h5>
+									<p>description about the event blah blah</p>
+									<a href="#">View Details</a>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
+			<!-- events -->
 
 			<div id="contact">
+				<br>
 				<div class="container">
 					<form id="form-control" action="">
 						<h2>Contact</h2>
@@ -124,7 +162,7 @@
 			<div class="container">
 				<div class="footer">
 					<address>
-						Copyright&copy;Kim Nahyeong. All Right Reserved.
+						Copyright&copy;Kim Nahyeong, All Right Reserved.
 					</address>
 					<ul>
 						<li><a href="#">Privacy</a></li>
