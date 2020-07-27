@@ -1,1 +1,1 @@
-Pictures and Some fonts not included
+Font of banner not included
