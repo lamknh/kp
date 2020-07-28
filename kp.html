@@ -1,19 +1,19 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kyle Patrick</title>
+	
 	<!-- css style -->
 	<link rel="stylesheet" type="text/css" href="reset.css" />
 	<link rel="stylesheet" type="text/css" href="kp.css" />
-
-	<!-- javascript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- web icon -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- web font -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-	<title>Kyle Patrick</title>
 </head>
 
 <body>
@@ -51,47 +51,59 @@
 						</div>
 					</div>
 				</nav>
-				<script src="nav.js"></script>
+				<script src="./js/nav.js"></script>
 			</div>
 		</div>
 		
+		<main data-router-wrapper>
+			<section data-router-view="home" class="home">
+				<div id="banner">
+					<div class="container">
+						<div class="header-tit">
+							<h1>Kyle Patrick</h1>
+							<div id="bio_info">
+								<p id="info"><br>Singer, Songwriter, Producer</p>
+							</div>
+						</div>
+					</div>
+		
+					<div class="banner-space">
+						<div class="banner-icon">
+							<h3>@realkylepatrick</h3><br>
+							<div class="icon">
+								<a href="https://twitter.com/RealKylePatrick" class="tw">
+								<i class="fa fa-twitter" aria-hidden="true"></i></a>
+							</div>	
+							<div class="icon">
+								<a href="https://www.instagram.com/realkylepatrick/" class="ig">
+								<i class="fa fa-instagram" aria-hidden="true"></i></a>
+							</div>						
+							<div class="icon">
+								<a href="https://www.facebook.com/KylePatrickOfficial/" class="fb">
+								<i class="fa fa-facebook" aria-hidden="true"></i></a>
+							</div>
+							<!-- header icon -->
+						</div>
+					</div>
+				</div>
+			</section>	
+		</main>
+		
 
-		<div id="banner">
-			<div class="container">
-				<div class="header-space"></div>
-				<div class="header-tit">
-					<h1>Kyle Patrick</h1>
-					<div id="bio_info">
-						<p id="info"><br>Singer, Songwriter, Producer</p>
-					</div>
-				</div>
-				<!-- header title -->
-			</div>
-			<div class="banner-space">
-				<div class="banner-icon">
-					<h3><strong>@realkylepatrick</strong></h3><br>
-					<div class="icon">
-						<a href="https://twitter.com/RealKylePatrick" class="tw">
-						<i class="fa fa-twitter" aria-hidden="true"></i></a>
-					</div>	
-					<div class="icon">
-						<a href="https://www.instagram.com/realkylepatrick/" class="ig">
-						<i class="fa fa-instagram" aria-hidden="true"></i></a>
-					</div>						
-					<div class="icon">
-						<a href="https://www.facebook.com/KylePatrickOfficial/" class="fb">
-						<i class="fa fa-facebook" aria-hidden="true"></i></a>
-					</div>
-					<!-- header icon -->
-				</div>
-			</div>
-		</div>
+		<menu>
+			<ul class="nav-list">
+				<li><a class="nav-lists" href="kp.html">Home</a></li>
+				<li><a class="nav-lists" href="#">Album</a></li>
+				<li><a class="nav-lists" href="event.html">Events</a></li>
+				<li><a class="nav-lists" href="#">Contact</a></li>
+			</ul>
+		</menu>
 
 		<div id="contents">
 			<div class="container">
 				<br>
-				<h2>Album</h2>
 				<div class="slidershow">
+					<h2>Album</h2>
 					<div class="slides">
 						<input type="radio" name="r" id="r1" checked>
 						<input type="radio" name="r" id="r2">
@@ -99,7 +111,9 @@
 						<input type="radio" name="r" id="r4">
 						
 						<div class="slide s1">
-							<img src="sources/img/mmnp.jpg" alt="">
+							<div class="album s1">
+								<img src="sources/img/mmnp.jpg" alt="">
+							</div>
 							<div class="description">
 								<div class="title">
 									<h3>Modern Minds and Pastimes</h3>
@@ -114,7 +128,9 @@
 							</div>
 						</div>
 						<div class="slide s2">
-							<img src="sources/img/kp.jpg" alt="">
+							<div class="album">
+								<img src="sources/img/kp.jpg" alt="">
+							</div>
 							<div class="description">
 								<div class="title">
 									<h3>KP</h3>
@@ -128,7 +144,9 @@
 							</div>
 						</div>						
 						<div class="slide s3">
-							<img src="sources/img/tcv.jpg" alt="">
+							<div class="album">
+								<img src="sources/img/tcv.jpg" alt="">
+							</div>
 							<div class="description">
 								<div class="title">
 									<h3>TCV</h3>
@@ -143,7 +161,9 @@
 							</div>
 						</div>
 						<div class="slide s4">
-							<img src="sources/img/kylepatrick.jpg" alt="">
+							<div class="album">
+								<img src="sources/img/kylepatrick.jpg" alt="">
+							</div>
 							<div class="description">
 								<div class="title">
 									<h3>Kyle Patrick</h3>
@@ -167,58 +187,20 @@
 					</div>					
 				</div>
 				<!-- Album slider -->
-			</div>
 
-			<div class="event">
-				<br>
-				<div class="container">
-					<div class="description">
-						<h3>Events And Shows</h3>
-						<p>description blah blah blah</p>
-					</div>
+				<div id="contact">
 					<br>
-					<div class="events">
-						<ul>
-							<li>
-								<div class="time">
-									<h4>date<br><span>Month</span></h4>
-								</div>
-								<div class="details">
-									<h3>Event Title</h3>
-									<p>description about the event blah blah</p>
-									<a href="#">View Details</a>
-								</div>
-								<div style="clear: both;"></div>
-							</li>
-							<li>
-								<div class="time">
-									<h4>date<br><span>Month</span></h4>
-								</div>
-								<div class="details">
-									<h3>Event Title</h3>
-									<p>description about the event blah blah</p>
-									<a href="#">View Details</a>
-								</div>
-								<div style="clear: both;"></div>
-							</li>
-						</ul>
+					<div class="container">
+						<form id="form-control" action="">
+							<h2>Contact</h2>
+							<input name="name" type="text" class="form-control" placeholder="Name" required><br>
+							<input name="email" type="email" class="form-control" placeholder="Email" required><br>
+							<br><br>
+							<textarea type="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+							<input type="submit" class="form-control-submit" value="SEND MESSAGE">
+						</form>
+						<br>
 					</div>
-				</div>
-			</div>
-			<!-- events -->
-
-			<div id="contact">
-				<br>
-				<div class="container">
-					<form id="form-control" action="">
-						<h2>Contact</h2>
-						<input name="name" type="text" class="form-control" placeholder="Name" required><br>
-						<input name="email" type="email" class="form-control" placeholder="Email" required><br>
-						<br><br>
-						<textarea type="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
-						<input type="submit" class="form-control-submit" value="SEND MESSAGE">
-					</form>
-					<br>
 				</div>
 			</div>
 		</div>

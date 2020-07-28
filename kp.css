@@ -2,7 +2,7 @@ a:visited{ color:white;}
 
 /* layout */
 #wrap {margin: 0 auto;}
-#header {height: 70px; background: rgb(32, 32, 32);}
+#header {height: 10vh; background: rgb(32, 32, 32);}
 #banner {
     background-image: url("sources/img/turntable.jpg");
     background-size: cover;
@@ -20,7 +20,7 @@ a:visited{ color:white;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 10vh;
 }
 .nav-links{
     display: flex;
@@ -74,7 +74,11 @@ a:visited{ color:white;}
     line-height: 35px;
     width: 0;
 }
+
 /* header interactive */
+.nav-links{
+    z-index: 9999;
+}
 .burger {
     display: none;  
 }
@@ -144,7 +148,6 @@ a:visited{ color:white;}
 }
 
 /*banner*/
-.header-space {height: 20px;}
 #banner .container .header-tit {text-align: center;}
 #banner .container .header-tit h1 {
     font-size:5rem; 
@@ -170,7 +173,8 @@ a:visited{ color:white;}
     text-shadow: 3px 3px #111;
 }
 
-.banner-space {height: 76px; 
+.banner-space {
+    height: 90px; 
     background-color: rgb(32, 32, 32);
 }
 
@@ -194,26 +198,38 @@ a:visited{ color:white;}
     transition: 0.4s;
 }
 #banner .banner-space .banner-icon h3 {
-    font-size: 1rem; 
+    font-size: 20px; 
     display: inline-block; 
     margin-top: 20px; 
-    padding-right: 6%;
+    padding-right: 8%;
     color: rgb(252, 253, 206); 
     width: 10px;
 }
 
 /* menu */
-.nav {overflow : hidden; color: rgb(252, 253, 206); }
-.nav > div {
-    float : left; 
-    width: 40%; 
-    padding :30px 0; 
-    text-align: center;
+menu{
+    margin: 0;
+    background: rgb(32, 32, 32);
+    position: relative;
 }
-.nav > div.space {float: left; width: 20%}
+.nav-list{
+    padding: 40px;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.nav-list li a:hover{
+    color: red;
+    transition: 0.4s;
+}
 h2{
     color:red;
-    text-align:center;
+    text-align: center;
+    align-items: center;
     background-color: aliceblue;
     font-size: 2.1rem;
     font-family: Georgia, "Helvetica Neue", serif;
@@ -224,17 +240,21 @@ h2{
 
 /* slidershow */
 img{
-    height: 100%; width: 100%;
+    height: 100%;
 }
 .slidershow {
-    width: 400px; height: 400px;
+    position: relative;
     overflow: hidden;
+}
+.album {
+    width: 400px; 
+    height: 400px;
 }
 .navigation{
     position: absolute;
-    bottom: -290px;
-    left: 65%;
-    transform: translateX(-50%);
+    top: 90%;
+    left: 50%;
+    transform: translateX(35%);
     display: flex;
     margin: auto;
 }
@@ -248,8 +268,9 @@ img{
     border: 2px solid #fff;
     display: flex;
     margin: auto;
-    bottom: -240px;
-    left: 48%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-10%);
     width: 480px;
     height: 300px;
     visibility: hidden;
@@ -324,7 +345,11 @@ input[name="r"]{
 
 /* events */
 .event{
-    height: 800px;
+    background: rgb(32, 32, 32);
+    padding: 20px;
+}
+.event .container{
+    height: 100%;
 }
 .event .description{
     height: 50px;
@@ -348,7 +373,7 @@ input[name="r"]{
 .event .events{
     position: relative;
     background: rgba(0, 0, 0, 0.5);
-    height: 600px;
+    height: 700px;
     display: flex;
 }
 .event .events ul{
@@ -357,11 +382,10 @@ input[name="r"]{
     transform: translateY(-50%);
     padding: 40px;
     width: 100%;
-    margin-top: 10%;
 }
 .event .events li{
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(0, -50%, 50%, 0);
     padding: 40px;
     width: 92%;
     list-style: none;
@@ -370,11 +394,10 @@ input[name="r"]{
     padding: 0;
     display: flex;
     margin-top: -1px;
+    margin: 15px 0;
 }
 .event .events ul li .time{
     position: relative;
-    padding: 1px;
-    margin-top: -1px;
     background: #262626;
     width: 25%;
     height: 100%;
@@ -433,6 +456,7 @@ input[name="r"]{
     color: #fff;
     border-color: #e91e63;
 }
+
 /* contact */
 #contact .container {
     color: white; 
