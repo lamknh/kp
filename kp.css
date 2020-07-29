@@ -148,13 +148,15 @@ a:visited{ color:white;}
 }
 
 /*banner*/
-#banner .container .header-tit {text-align: center;}
+#banner .container .header-tit {
+    text-align: center;
+    padding-top: 40px;
+}
 #banner .container .header-tit h1 {
     font-size:5rem; 
     color: white;
     border:2px solid white;
-    padding : 10px; 
-    margin-top: 40px; 
+    padding : 10px;  
     font-family: Righteous, "Helvetica Neue", serif;
     background-color: rgba(162, 162, 162, 0.452);
     text-shadow: 3px 2px #111;
