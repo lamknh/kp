@@ -187,7 +187,6 @@ a:visited{ color:white;}
 }
 #footer .container .footer address {
     padding: 5px 0;
-    margin-bottom: 2px;
     color: rgba(255, 255, 255, 0.829);
     font-size: 14px;
 }
@@ -195,8 +194,9 @@ a:visited{ color:white;}
     position: relative;
     display: inline; 
     text-transform: uppercase; 
-    padding: 0 10px 0 10px;
-    font-size: 17   px;
+    padding: 0 8px 0 10px;
+    font-size: 17px;
+    letter-spacing: 0.7px;
 }
 #footer .container .footer li:before {
     content: ""; 
@@ -269,9 +269,9 @@ a:visited{ color:white;}
     font-size: 20px; 
     display: inline-block; 
     margin-top: 20px; 
-    padding-right: 8%;
     color: rgb(252, 253, 206); 
-    width: 10px;
+    width: auto;
+    align-items: center;
 }
 
 /* menu */
@@ -281,12 +281,13 @@ menu{
     position: relative;
 }
 .nav-list{
-    padding: 40px 0;
+    padding: 70px 0;
     display: flex;
     width: 50%;
     justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
-    margin: 0px auto;
     font-size: 20px;
     letter-spacing: 1px;
     transition: 0.5s ease;
@@ -320,7 +321,7 @@ menu{
     }
     .nav-list{
         width: 90%;
-        padding: 48px 0px;
+        padding: 80px 0 0;
     }
     .nav-list li i{
         font-size: 40px;
